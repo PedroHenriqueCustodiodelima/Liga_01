@@ -1,0 +1,14 @@
+﻿<Window x:Class="Liga_01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Liga_01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="300">
+    <Grid>
+        <Button Content="Cadastrar campeonato" HorizontalAlignment="Left" Height="19" Margin="16,10,0,0" VerticalAlignment="Top" Width="127" Click="camp_Click"/>
+        <Button Content="Cadastrar time" HorizontalAlignment="Left" Height="19" Margin="16,38,0,0" VerticalAlignment="Top" Width="127" Click="time_Click"/>
+        <Button Content="inscrever jogador" HorizontalAlignment="Left" Height="19" Margin="16,67,0,0" VerticalAlignment="Top" Width="127" Click="jogador_Click"/>
+    </Grid>
+</Window>
