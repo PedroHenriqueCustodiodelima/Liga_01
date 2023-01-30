@@ -75,7 +75,7 @@ namespace Liga_01
             if (listJogador.SelectedItem != null)
             {
 
-                NTime.Excluir((Time)listJogador.SelectedItem);
+                NJogador.Excluir((Jogador)listJogador.SelectedItem);
                 ListarClick(sender, e);
             }
             else

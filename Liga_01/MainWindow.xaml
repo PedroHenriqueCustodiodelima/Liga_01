@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="250" Width="300">
     <Grid>
-        <Button Content="Cadastrar campeonato" HorizontalAlignment="Left" Height="19" Margin="16,10,0,0" VerticalAlignment="Top" Width="127" Click="camp_Click"/>
-        <Button Content="Cadastrar time" HorizontalAlignment="Left" Height="19" Margin="16,38,0,0" VerticalAlignment="Top" Width="127" Click="time_Click"/>
-        <Button Content="inscrever jogador" HorizontalAlignment="Left" Height="19" Margin="16,67,0,0" VerticalAlignment="Top" Width="127" Click="jogador_Click"/>
+        <Button Content="Gerenciar Campeonatos" HorizontalAlignment="Center" Height="24" VerticalAlignment="Center" Width="162" Click="camp_Click"/>
+        <Button Content="Gerenciar Times" HorizontalAlignment="Center" Height="25" Margin="0,142,0,0" VerticalAlignment="Top" Width="162" Click="time_Click"/>
+        <Button Content="Gerenciar Jogadores" HorizontalAlignment="Center" Height="24" Margin="0,179,0,0" VerticalAlignment="Top" Width="162" Click="jogador_Click"/>
+        <Label Content="Registro da Ligas" Margin="0,21,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24"/>
     </Grid>
 </Window>

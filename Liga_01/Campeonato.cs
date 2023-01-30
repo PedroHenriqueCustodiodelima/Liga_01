@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Liga_01
 {
-    class Campeonato
+    public class Campeonato
     {
         public int Id { get; set; }
         public string Nome { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Liga_01
 {
-    class Time
+    public class Time
     {
         public int Id { get; set; }
         public int IdCampeonato { get; set; }
@@ -15,7 +15,7 @@ namespace Liga_01
         public string Estado { get; set; }
         public override string ToString()
         {
-            return $" {IdCampeonato} - {Sigla} - {Nome} - {Estado}";
+            return $" {Id} - {Sigla} - {Nome} - {Estado}";
         }
     }
 }

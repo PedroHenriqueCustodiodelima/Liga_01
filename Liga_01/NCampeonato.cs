@@ -62,7 +62,7 @@ namespace Liga_01
             public static void Salvar()
             {
                 XmlSerializer xml = new XmlSerializer(typeof(List<Campeonato>));
-                StreamWriter f = new StreamWriter("./jogador.xml", false);
+                StreamWriter f = new StreamWriter("./campeonato.xml", false);
                 xml.Serialize(f, campeonatos);
                 f.Close();
             }
