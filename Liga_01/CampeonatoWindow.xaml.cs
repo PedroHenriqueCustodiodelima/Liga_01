@@ -17,9 +17,9 @@ namespace Liga_01
     /// <summary>
     /// Lógica interna para Cad_campeonato.xaml
     /// </summary>
-    public partial class Cad_campeonato : Window
+    public partial class CampeonatoWindow : Window
     {
-        public Cad_campeonato()
+        public CampeonatoWindow()
         {
             InitializeComponent();
         }

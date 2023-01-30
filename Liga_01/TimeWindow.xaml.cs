@@ -17,9 +17,9 @@ namespace Liga_01
     /// <summary>
     /// Lógica interna para Cad_time.xaml
     /// </summary>
-    public partial class Cad_time : Window
+    public partial class TimeWindow : Window
     {
-        public Cad_time()
+        public TimeWindow()
         {
             InitializeComponent();
         }
@@ -92,7 +92,8 @@ namespace Liga_01
 
         private void CadastrarClick(object sender, RoutedEventArgs e)
         {
-
+            Cad_Time w = new Cad_Time();
+            w.ShowDialog();
         }
     }
 }

@@ -17,9 +17,9 @@ namespace Liga_01
     /// <summary>
     /// Lógica interna para Inscrever_jogador.xaml
     /// </summary>
-    public partial class Inscrever_jogador : Window
+    public partial class JogadorWindow : Window
     {
-        public Inscrever_jogador()
+        public JogadorWindow()
         {
             InitializeComponent();
         }
@@ -94,6 +94,12 @@ namespace Liga_01
                 txtNome.Text = obj.Nome;
                 txtPosicao.Text = obj.Posicao;
             }
+        }
+
+        private void CadastrarClick(object sender, RoutedEventArgs e)
+        {
+            Cad_Jogador w = new Cad_Jogador();
+            w.ShowDialog();
         }
     }
 }

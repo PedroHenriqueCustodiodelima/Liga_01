@@ -27,19 +27,19 @@ namespace Liga_01
 
         private void camp_Click(object sender, RoutedEventArgs e)
         {
-            Cad_campeonato w = new Cad_campeonato();
+            CampeonatoWindow w = new CampeonatoWindow();
             w.ShowDialog();
         }
 
         private void time_Click(object sender, RoutedEventArgs e)
         {
-            Cad_time w = new Cad_time();
+            TimeWindow w = new TimeWindow();
             w.ShowDialog();
         }
 
         private void jogador_Click(object sender, RoutedEventArgs e)
         {
-            Inscrever_jogador w = new Inscrever_jogador();
+            JogadorWindow w = new JogadorWindow();
             w.ShowDialog();
         }
     }

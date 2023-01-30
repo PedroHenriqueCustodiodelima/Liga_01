@@ -69,7 +69,7 @@ namespace Liga_01
             xml.Serialize(f, jogadores);
             f.Close();
         }
-        public static void Matricular(Jogador j, Time t)
+        public static void Cadastrar(Jogador j, Time t)
         {
             j.IdTime = t.Id;
             Atualizar(j);
