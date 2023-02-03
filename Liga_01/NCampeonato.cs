@@ -14,6 +14,10 @@ namespace Liga_01
             public static void Inserir(Campeonato c)
             { // C - Create
                 Abrir();
+                int id = 0;
+                foreach (Campeonato obj in campeonatos)
+                    if (obj.Id > id) id = obj.Id;
+                t.Id = id + 1;
                 campeonatos.Add(c);
                 Salvar();
             }

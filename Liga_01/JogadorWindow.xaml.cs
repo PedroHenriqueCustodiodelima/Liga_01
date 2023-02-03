@@ -66,7 +66,7 @@ namespace Liga_01
                 Numero = Numero,
                 Posicao = Posicao,
             };
-            NJogador.Inserir(t);
+            NJogador.Atualizar(t);
             ListarClick(sender, e);
         }
 

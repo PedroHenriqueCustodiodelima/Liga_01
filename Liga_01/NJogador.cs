@@ -14,6 +14,10 @@ namespace Liga_01
         public static void Inserir(Jogador t)
         { // C - Create
             Abrir();
+            int id = 0;
+            foreach (Jogador obj in jogadores)
+                if (obj.Id > id) id = obj.Id;
+            t.Id = id + 1; 
             jogadores.Add(t);
             Salvar();
         }
@@ -22,7 +26,7 @@ namespace Liga_01
             Abrir();
             return jogadores;
         }
-        public static Jogador Listar(int id)
+        public static Jogador Selecionar(int id)
         {
             
             foreach (Jogador obj in jogadores)
@@ -32,7 +36,7 @@ namespace Liga_01
         public static void Atualizar(Jogador t)
         { // U - Update
             Abrir();
-            Jogador obj = Listar(t.Id);
+            Jogador obj = Selecionar(t.Id);
             obj.Nome = t.Nome;
             obj.Id = t.Id;
             obj.Numero = t.Numero;
@@ -44,7 +48,7 @@ namespace Liga_01
         public static void Excluir(Jogador t)
         { // D - Delete
             Abrir();
-            jogadores.Remove(Listar(t.Id));
+            jogadores.Remove(Selecionar(t.Id));
             Salvar();
         }
         public static void Abrir()
@@ -82,5 +86,15 @@ namespace Liga_01
                 if (obj.IdTime == t.Id) diario.Add(obj);
             return diario;
         }
+        public static List<Jogador> Listar(int idtime)
+        {
+            Abrir();
+            List<Jogador> elenco = new List<Jogador>();
+            foreach (Jogador obj in jogadores)
+                if (obj.IdTime == idtime) elenco.Add(obj);
+            return elenco;
+        }
+        
+
     }
 }

@@ -14,6 +14,10 @@ namespace Liga_01
         public static void Inserir(Time t)
         {
             Abrir();
+            int id = 0;
+            foreach (Time obj in times)
+                if (obj.Id > id) id = obj.Id;
+            t.Id = id + 1;
             times.Add(t);
             Salvar();
         }
@@ -71,6 +75,14 @@ namespace Liga_01
             StreamWriter f = new StreamWriter("./time.xml", false);
             xml.Serialize(f, times);
             f.Close();
+        }
+        public static List<Time> Listar(Campeonato c)
+        {
+            Abrir();
+            List<Time> tabela = new List<Time>();
+            foreach (Time obj in times)
+                if (obj.IdCampeonato == c.Id) tabela.Add(obj);
+            return tabela;
         }
     }
 }

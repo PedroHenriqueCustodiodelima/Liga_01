@@ -5,20 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Liga_01"
         mc:Ignorable="d"
-        Title="Inscrever_jogador" Height="250" Width="600">
+        Title="Gerenciador de jogadores" Height="250" Width="600">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="10,9,0,0" Text="Id" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="55,9,0,0" Text="Idtime" TextWrapping="Wrap" VerticalAlignment="Top" Width="39"/>
-        <TextBlock HorizontalAlignment="Left" Margin="163,9,0,0" Text="Nome" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.411,0.813"/>
-        <TextBlock HorizontalAlignment="Left" Margin="265,9,0,0" Text="Idade" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="370,9,0,0" Text="Posição" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="481,9,0,0" Text="Número" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox Name="txtId" HorizontalAlignment="Left" Margin="10,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
-        <TextBox Name="txtIdtime" HorizontalAlignment="Left" Margin="55,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <TextBox Name="txtNome" HorizontalAlignment="Left" Margin="160,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <TextBox Name="txtIdade" HorizontalAlignment="Left" Margin="265,31,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <TextBox Name="txtPosicao" HorizontalAlignment="Left" Margin="370,31,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <TextBox Name="txtNumero" HorizontalAlignment="Left" Margin="475,31,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="14,8,0,0" Text="Nome" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.411,0.813"/>
+        <TextBlock HorizontalAlignment="Left" Margin="116,8,0,0" Text="Idade" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="221,8,0,0" Text="Posição" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="332,8,0,0" Text="Número" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Name="txtNome" HorizontalAlignment="Left" Margin="11,29,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox Name="txtIdade" HorizontalAlignment="Left" Margin="116,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox Name="txtPosicao" HorizontalAlignment="Left" Margin="221,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox Name="txtNumero" HorizontalAlignment="Left" Margin="326,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
         <Button Click="InserirClick" Content="Inserir" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top"/>
         <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="52,53,0,0" VerticalAlignment="Top"/>
         <Button Click="AtualizarClick" Content="Atualizar" HorizontalAlignment="Left" Margin="89,53,0,0" VerticalAlignment="Top"/>

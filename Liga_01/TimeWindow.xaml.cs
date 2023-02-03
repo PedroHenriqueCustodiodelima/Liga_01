@@ -62,7 +62,7 @@ namespace Liga_01
                 Sigla = Sigla,
                 Estado = Estado
             };
-            NTime.Inserir(t);
+            NTime.Atualizar(t);
             ListarClick(sender, e);
         }
 
