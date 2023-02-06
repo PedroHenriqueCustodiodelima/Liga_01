@@ -25,15 +25,12 @@ namespace Liga_01
         }
         private void InserirClick(object sender, RoutedEventArgs e)
         {
-            int id = int.Parse(txtId.Text);
-            int idCampeonato = int.Parse(txtIdcampeonato.Text);
+            
             string Nome = txtNome.Text;
             string Sigla = txtSigla.Text;
             string Estado = txtEstado.Text;
             Time t = new Time()
             {
-                Id = id,
-                IdCampeonato = idCampeonato,
                 Nome = Nome,
                 Sigla = Sigla,
                 Estado = Estado
@@ -49,15 +46,13 @@ namespace Liga_01
 
         private void AtualizarClick(object sender, RoutedEventArgs e)
         {
-            int id = int.Parse(txtId.Text);
-            int idCampeonato = int.Parse(txtIdcampeonato.Text);
             string Nome = txtNome.Text;
             string Sigla = txtSigla.Text;
             string Estado = txtEstado.Text;
+            int Id = ((Time)listTimes.SelectedItem).Id;
             Time t = new Time()
             {
-                Id = id,
-                IdCampeonato = idCampeonato,
+                Id = Id,
                 Nome = Nome,
                 Sigla = Sigla,
                 Estado = Estado
@@ -82,8 +77,6 @@ namespace Liga_01
             if (listTimes.SelectedItem != null)
             {
                 Time obj = (Time)listTimes.SelectedItem;
-                txtId.Text = obj.Id.ToString();
-                txtIdcampeonato.Text = obj.IdCampeonato.ToString();
                 txtNome.Text = obj.Nome;
                 txtSigla.Text = obj.Sigla;
                 txtEstado.Text = obj.Estado.ToString();

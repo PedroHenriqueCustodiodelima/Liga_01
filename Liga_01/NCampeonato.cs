@@ -17,7 +17,7 @@ namespace Liga_01
                 int id = 0;
                 foreach (Campeonato obj in campeonatos)
                     if (obj.Id > id) id = obj.Id;
-                t.Id = id + 1;
+                c.Id = id + 1;
                 campeonatos.Add(c);
                 Salvar();
             }

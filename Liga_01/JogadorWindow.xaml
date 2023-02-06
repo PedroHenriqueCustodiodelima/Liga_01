@@ -10,16 +10,24 @@
         <TextBlock HorizontalAlignment="Left" Margin="14,8,0,0" Text="Nome" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.411,0.813"/>
         <TextBlock HorizontalAlignment="Left" Margin="116,8,0,0" Text="Idade" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="221,8,0,0" Text="Posição" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="332,8,0,0" Text="Número" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="346,10,0,0" Text="Número" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox Name="txtNome" HorizontalAlignment="Left" Margin="11,29,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
         <TextBox Name="txtIdade" HorizontalAlignment="Left" Margin="116,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <TextBox Name="txtPosicao" HorizontalAlignment="Left" Margin="221,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <TextBox Name="txtNumero" HorizontalAlignment="Left" Margin="326,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox Name="txtNumero" HorizontalAlignment="Left" Margin="346,30,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
         <Button Click="InserirClick" Content="Inserir" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top"/>
         <Button Click="ListarClick" Content="Listar" HorizontalAlignment="Left" Margin="52,53,0,0" VerticalAlignment="Top"/>
         <Button Click="AtualizarClick" Content="Atualizar" HorizontalAlignment="Left" Margin="89,53,0,0" VerticalAlignment="Top"/>
         <Button Click="ExcluirClick" Content="Excluir" HorizontalAlignment="Left" Margin="144,53,0,0" VerticalAlignment="Top"/>
         <Button Click="CadastrarClick" Content="Cadastrar" HorizontalAlignment="Left" Margin="187,53,0,0" VerticalAlignment="Top"/>
         <ListBox Name="listJogador" Margin="10,80,15,15" SelectionChanged="listJogador_SelectionChanged" />
+        <ComboBox Name="txtPosicao" HorizontalAlignment="Left" Margin="221,30,0,0" VerticalAlignment="Top" Width="120" Height="18">
+            <ComboBoxItem Content="Goleiro"/>
+            <ComboBoxItem Content="Lateral"/>
+            <ComboBoxItem Content="Zagueiro"/>
+            <ComboBoxItem Content="Volante"/>
+            <ComboBoxItem Content="Meio-Campista"/>
+            <ComboBoxItem Content="Ponta"/>
+            <ComboBoxItem Content="Atacante"/>
+        </ComboBox>
     </Grid>
 </Window>

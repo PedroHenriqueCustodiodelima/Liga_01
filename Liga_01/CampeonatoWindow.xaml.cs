@@ -25,12 +25,10 @@ namespace Liga_01
         }
         private void InserirClick(object sender, RoutedEventArgs e)
         {
-            int id = int.Parse(txtId.Text);
             string Nome = txtNome.Text;
             string Temporada = txtTemporada.Text;
             Campeonato c = new Campeonato
             {
-                Id = id,
                 Nome = Nome,
                 Temporada = Temporada
             };
@@ -45,12 +43,12 @@ namespace Liga_01
 
         private void AtualizarClick(object sender, RoutedEventArgs e)
         {
-            int id = int.Parse(txtId.Text);
             string Nome = txtNome.Text;
             string Temporada = txtTemporada.Text;
+            int Id = ((Campeonato)listcampeonato.SelectedItem).Id;
             Campeonato c = new Campeonato
             {
-                Id = id,
+                Id = Id,
                 Nome = Nome,
                 Temporada = Temporada
             };
@@ -74,7 +72,6 @@ namespace Liga_01
             if (listcampeonato.SelectedItem != null)
             {
                 Campeonato obj = (Campeonato)listcampeonato.SelectedItem;
-                txtId.Text = obj.Id.ToString();
                 txtNome.Text = obj.Nome;
                 txtTemporada.Text = obj.Temporada;
             }

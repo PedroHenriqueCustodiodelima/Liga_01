@@ -42,5 +42,17 @@ namespace Liga_01
             JogadorWindow w = new JogadorWindow();
             w.ShowDialog();
         }
+
+        private void tabelas_Click(object sender, RoutedEventArgs e)
+        {
+            TabelaWindow w = new TabelaWindow();
+            w.ShowDialog();
+        }
+
+        private void elencos_Click(object sender, RoutedEventArgs e)
+        {
+            ElencoWindow w = new ElencoWindow();
+            w.ShowDialog();
+        }
     }
 }

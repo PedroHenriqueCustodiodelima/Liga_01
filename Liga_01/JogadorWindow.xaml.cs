@@ -25,16 +25,12 @@ namespace Liga_01
         }
         private void InserirClick(object sender, RoutedEventArgs e)
         {
-            int id = int.Parse(txtId.Text);
-            int idTime = int.Parse(txtIdtime.Text);
             int Idade = int.Parse(txtIdade.Text);
             int Numero = int.Parse(txtNumero.Text);
             string Nome = txtNome.Text;
             string  Posicao = txtPosicao.Text;
             Jogador t = new Jogador()
             {
-                Id = id,
-                IdTime = idTime,
                 Nome = Nome,
                 Idade = Idade,
                 Numero = Numero,
@@ -51,16 +47,14 @@ namespace Liga_01
 
         private void AtualizarClick(object sender, RoutedEventArgs e)
         {
-            int id = int.Parse(txtId.Text);
-            int idTime = int.Parse(txtIdtime.Text);
             int Idade = int.Parse(txtIdade.Text);
             int Numero = int.Parse(txtNumero.Text);
             string Nome = txtNome.Text;
             string Posicao = txtPosicao.Text;
+            int Id = ((Jogador)listJogador.SelectedItem).Id;
             Jogador t = new Jogador()
             {
-                Id = id,
-                IdTime = idTime,
+                Id = Id,
                 Nome = Nome,
                 Idade = Idade,
                 Numero = Numero,
@@ -87,8 +81,6 @@ namespace Liga_01
             if (listJogador.SelectedItem != null)
             {
                 Jogador obj = (Jogador)listJogador.SelectedItem;
-                txtId.Text = obj.Id.ToString();
-                txtIdtime.Text = obj.IdTime.ToString();
                 txtNumero.Text = obj.Numero.ToString();
                 txtIdade.Text = obj.Idade.ToString();
                 txtNome.Text = obj.Nome;

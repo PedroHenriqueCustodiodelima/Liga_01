@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Liga_01"
         mc:Ignorable="d"
-        Title="Registro de Ligas" Height="250" Width="300">
+        Title="Registro de Ligas" Height="400" Width="600">
     <Grid>
-        <Button Content="Gerenciar Campeonatos" HorizontalAlignment="Center" Height="24" VerticalAlignment="Center" Width="162" Click="camp_Click"/>
+        <Button Content="Gerenciar Campeonatos" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="162" Click="camp_Click" Margin="37,141,0,0"/>
         <Button Content="Gerenciar Times" HorizontalAlignment="Center" Height="25" Margin="0,141,0,0" VerticalAlignment="Top" Width="162" Click="time_Click"/>
-        <Button Content="Gerenciar Jogadores" HorizontalAlignment="Center" Height="24" Margin="0,179,0,0" VerticalAlignment="Top" Width="162" Click="jogador_Click"/>
+        <Button Content="Gerenciar Jogadores" HorizontalAlignment="Left" Height="24" Margin="397,141,0,0" VerticalAlignment="Top" Width="162" Click="jogador_Click"/>
         <Label Content="Registro de Ligas" Margin="0,21,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24"/>
+        <Button Content="Tabelas" HorizontalAlignment="Left" Height="25" Margin="124,182,0,0" VerticalAlignment="Top" Width="162" Click="tabelas_Click"/>
+        <Button Content="Elencos" HorizontalAlignment="Left" Height="25" Margin="330,182,0,0" VerticalAlignment="Top" Width="162" Click="elencos_Click"/>
     </Grid>
 </Window>
